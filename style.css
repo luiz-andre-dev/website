@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+     font-family: "Poppins", sans-serif;;
+}
+
+:root{
+    --verde-escuro: #14424b;
+    --verde:#2f9364;
+    --orange:#ff7c37;
+    --degrade-btn:linear-gradient(#fe9611, #ff5c00);
+    --color-p-2:#a1a1a1;
+    --color-p:#868585;
+}
+
+.background-verde{
+    background: var(--verde-escuro);
+}
+
+
+ /* classes reutilizados */
+
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+  
+}
+
+section, footer{
+    padding: 2.7rem 0;
+}
+
+.btn-gradient{
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image:var(--degrade-btn)
+}
+
+  
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a{
+    color: white;
+}
+
+
+  /* main */
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}         
+
+.main-text{
+    width: 50%;
+    color: white;
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 50%;
+}
+
+.main-img img{
+    width: 100%;
+}
+
+/*  MENU ICON */
+.menu-icon{
+    display: none;
+}
+
+/*  SECTION  RESULTADOS */
+
+.resultado{
+    background: var(--orange);
+}
+
+.resultado .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultado-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.resultado-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+ .resultado-numero p{
+    align-items: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.resultado-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* SSECTION DIFERENCIAS */
+
+.diferencias .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+   
+}
+
+.card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+}
+.card:hover{
+    box-shadow: 0px 10px 60px 8px #dbdbe7e7;
+}
+
+.card img{
+    width: 60px;
+   
+}
+.card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+
+}
+ /* SSECTION CASA */
+.casa .container{
+    display: flex;
+    align-items: center;
+}
+.casa-img{
+    width: 50%;
+}
+.casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa-txt{
+    width: 50%;
+    padding-left: 90px;
+}
+.casa-txt h2{
+    font-size: 2.5rem;
+}
+.casa-txt p{
+    margin: 20px 0;
+    color: var(--color-p);
+}
+.casa-txt p b{
+    color: #000;
+    font-size: 25px;
+}
+
+/* SECTION MELHORES LUGARES */
+
+.melhores-lugares .azul{
+    font-size: 24px;
+    font-weight: 600;
+    color: #0060f0;
+}
+.melhores-lugares h2{
+    font-size: 2.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0 ;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px 8px #dbdbe7e7;
+}
+
+.cards img{
+    width: 80px;
+}
+.cards .local-casa{
+    margin: 5px 0;
+    color: var(--color-p);
+}
+.cards .nome-casa{
+    font-size: 30px;
+    font-weight: 500;
+}
+.cards .contato{
+    margin-bottom: 20px;
+    color: var(--color-p-2);
+}
+.cards button{
+    padding: 10px 20px;
+    color: white;
+    background: var(--orange);
+    border: none;
+}
+
+/* SECTION NEWSLETTER */
+.newsletter{
+    margin-top: 50px;
+    background-color: var(--verde-escuro);
+}
+.box-newsletter{
+    text-align: center;
+    background-image: url(img/background-newsletter.png);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.box-newsletter h2{
+    font-size: 2.5rem;
+}
+.box-newsletter p{
+    margin: 13px 0;
+}
+.box-newsletter input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #00000098;
+    background-color: #faefda;
+}
+.box-newsletter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    background-color: var(--verde);
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: var(--verde-escuro);
+}
+footer .container{
+    display: flex;
+    color: white;
+
+}
+footer .container ul{
+    width: 25%;
+}
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.redes-sociais img{
+    margin-right: 10px;
+}
+footer .container ul > p{
+    margin-bottom: 40px;
+}
+footer .container li{
+    margin: 10px 0;
+}
+footer .container a{
+    color: white;
+}
+
+
+
+
+
+
+
+/* RESPONSIVEL */
+@media (max-width:933px) {
+    .menu-icon{
+        display: block;
+    }
+     .ul{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+     }
+
+     main .container{
+        flex-direction: column;
+     }
+
+     main .container .main-img{
+        width: 100%;
+     }
+
+     main .container .main-text{
+        width: 100%;
+        text-align: center;
+     }
+
+     main .container .main-text h1{
+        font-size: 4rem;
+     }
+
+     main .container .main-text div{
+        justify-content: center;
+     }
+
+     .resultado .container{
+        flex-direction: column;
+     }
+    
+     .resultado-numero{
+        margin-top: 30px;
+     }
+
+    .resultado .resultado-text, .resultado .resultado-numero{
+        width: 100%;
+        text-align: center;
+    }
+    .diferencias .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .casa .container{
+        flex-direction: column-reverse;
+    }
+    .casa-txt, .casa-img{
+        width: 100%;
+        text-align:center;
+        padding: 0;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .melhores-lugares .azul{
+        text-align: center;
+    }
+    
+.box-newsletter h2{
+    font-size: 2rem;
+}
+.box-newsletter input{
+    width: 90%;
+}
+.box-newsletter button{
+    width: 50%;
+    margin-top: 20px;
+}
+.box-newsletter{
+    padding: 50px;
+}
+footer .container{
+    flex-direction: column;
+}
+footer .container ul{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+}
+
+
+
+@media(max-width:440px){
+    .resultado-numero{
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+    
